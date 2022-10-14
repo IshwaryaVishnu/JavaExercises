@@ -3,8 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class RandomNumber{
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int max = 500;
         Scanner in = new Scanner(System.in);
         Random rand = new Random();

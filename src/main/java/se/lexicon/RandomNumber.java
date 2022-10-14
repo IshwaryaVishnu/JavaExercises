@@ -5,18 +5,17 @@ import java.util.Scanner;
 public class RandomNumber{
     public static void main(String[] args)
     {
-        int answer, guess;
-        final int MAX = 500;
+        int max = 500;
         Scanner in = new Scanner(System.in);
         Random rand = new Random();
 
         boolean correct = false;
-        answer = rand.nextInt(MAX) + 1;
+       int answer = rand.nextInt(max) + 1;
         while (!correct) {
 
             System.out.println(
                     "Guess a number between 1 and 500: ");
-            guess = in.nextInt();
+             int guess = in.nextInt();
             if (guess > answer) {
                 System.out.println("Your guess was too big");
             }
